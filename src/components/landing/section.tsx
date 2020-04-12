@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IPropsFullLandingImageSection } from './types'
+import { IPropsFullLandingImageSection } from '../../types/landing'
 
 
 export class FullImageSectionComponent extends React.PureComponent<IPropsFullLandingImageSection, {}> {
