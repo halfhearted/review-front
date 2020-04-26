@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { LandingComponent } from '../components';
+import { CardsListComponent, LandingComponent } from '../components';
 
 export class LandingContainer extends React.Component<{}/*props*/, {}/*state*/> {
 
@@ -8,6 +8,9 @@ export class LandingContainer extends React.Component<{}/*props*/, {}/*state*/> 
         return (
             <div>
                 <LandingComponent/>
+                <div className="wrapper">
+                    <CardsListComponent/>
+                </div>
             </div>
         );
     }
