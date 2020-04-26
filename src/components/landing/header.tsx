@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { Link } from 'react-router-dom'
+
 export class LandingHeaderComponent extends React.PureComponent<{}, {}> {
     // 말만 Header지 실제로는 Navbar처럼 구현되어 있음.
     public render(): React.ReactNode {
@@ -16,7 +18,7 @@ export class LandingHeaderComponent extends React.PureComponent<{}, {}> {
                                 <a className="nav-link" href="/">JOIN</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">LOGIN</a>
+                                <Link className="nav-link" to="/login">LOGIN</Link>
                             </li>
                         </ul>
                     </div>
