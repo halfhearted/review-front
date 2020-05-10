@@ -6,15 +6,17 @@ export class ListViewComponent extends React.PureComponent<{}, {}> {
 
     public render(): React.ReactNode {
         return(
-            <div className="list-group row m-5">
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
-                <ListElementComponent/>
+            <div className="container">
+                <div className="list-unstyled row m-5">
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                    <ListElementComponent/>
+                </div>
             </div>
         );
     }

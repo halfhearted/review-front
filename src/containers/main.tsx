@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-import { CardsListComponent, HeaderComponent, ListViewComponent } from '../components';
+import { FooterComponent, HeaderComponent, ListViewComponent } from '../components';
 
-export class LandingContainer extends React.Component<{}/*props*/, {}/*state*/> {
+export class MainContainer extends React.Component<{}/*props*/, {}/*state*/> {
 
     public render(): React.ReactNode {
         return (
             <div>
                 <HeaderComponent/>
                 <div className="wrapper">
-                    <CardsListComponent/>
                     <ListViewComponent/>
                 </div>
+                <FooterComponent/>
             </div>
         );
     }

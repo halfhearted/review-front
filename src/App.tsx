@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { LandingContainer, LoginContainer } from './containers' 
+import { LandingContainer, LoginContainer, MainContainer } from './containers' 
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -12,8 +12,9 @@ class App extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route exact={true} path="/" component={LandingContainer} />
+                        <Route exact={true} path="/" component={MainContainer} />
                         <Route path="/login" component={LoginContainer} />
+                        <Route path="/landing" component={LandingContainer} />
                     </Switch>
                 </div>
             </Router>
